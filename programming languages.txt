@@ -5,3 +5,16 @@ dart
 php
 html$css
 c++
+scala
+swift
+rust
+Kotlin
+No SQL
+R
+TYPE SWIFT
+MATLAP
+GO
+C#
+PERL
+BASH
+RUBY
