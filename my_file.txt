@@ -2,20 +2,20 @@
 
 def main():
     try:
-        # Task 1: File Creation and Writing
+        : File Creation and Writing
         with open('my_file.txt', 'w') as file:
             file.write("This is the first file file_handling_assignment.\n")
             file.write("Here is the second line with a number: 12345 explains it all\n")
             file.write("The third line is here am kevin a student at power learn project.\n")
         print("File created and initial lines written successfully.")
 
-        # Task 2: File Reading and Displaying
+        #: File Reading and Displaying
         with open('my_file.txt', 'r') as file:
             contents = file.read()
         print("\nContents of 'my_file.txt':")
         print(contents)
 
-        # Task 3: File Appending
+        # : File Appending
         with open('my_file.txt', 'a') as file:
             file.write("Appending a fourth line containing my details.\n")
             file.write("Appending a fifth line with another number mobile to be precise: +2543267890\n")
