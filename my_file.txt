@@ -1,0 +1,43 @@
+# file_handling_assignment.py
+
+def main():
+    try:
+        # Task 1: File Creation and Writing
+        with open('my_file.txt', 'w') as file:
+            file.write("This is the first file file_handling_assignment.\n")
+            file.write("Here is the second line with a number: 12345 explains it all\n")
+            file.write("The third line is here am kevin a student at power learn project.\n")
+        print("File created and initial lines written successfully.")
+
+        # Task 2: File Reading and Displaying
+        with open('my_file.txt', 'r') as file:
+            contents = file.read()
+        print("\nContents of 'my_file.txt':")
+        print(contents)
+
+        # Task 3: File Appending
+        with open('my_file.txt', 'a') as file:
+            file.write("Appending a fourth line containing my details.\n")
+            file.write("Appending a fifth line with another number mobile to be precise: +2543267890\n")
+            file.write("Finally, this is the sixth line.\n")
+        print("\nAdditional lines appended successfully.")
+
+        # Reading and displaying the file content again to show appended lines
+        with open('my_file.txt', 'r') as file:
+            contents = file.read()
+        print("\nUpdated contents of 'my_file.txt':")
+        print(contents)
+
+    except FileNotFoundError as e:
+        print(f"Error: {e}. File not found.")
+    except PermissionError as e:
+        print(f"Error: {e}. Permission denied.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+    finally:
+        print("File handling operation completed.")
+
+if __name__ == "__main__":
+    main()
+
+   
